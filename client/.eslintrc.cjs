@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, node:true, es2020: true },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -15,6 +15,7 @@ module.exports = {
     "react/jsx-uses-react": "error",   
     "react/jsx-uses-vars": "error" ,
     'react/jsx-no-target-blank': 'off',
+    "react/no-unescaped-entities": 0,
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
